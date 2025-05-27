@@ -11,7 +11,7 @@
 ## Como clonar o projeto
 
 ```powershell
-git clone https://github.com/seu-usuario/mini-bankerize.git
+git clone https://github.com/jeslxdev/mini-bankerize.git
 cd mini-bankerize/src
 ```
 
@@ -73,9 +73,9 @@ for ($i = 1; $i -le 10; $i++) {
   php artisan migrate:fresh
   ```
 - Rodar os testes unit:
-```powershell
-php artisan test
-```
+   ```powershell
+   php artisan test
+   ```
 - Criar usuário admin Filament:
   ```powershell
   php artisan user:create-admin admin@teste.com senha123 "João Admin"
