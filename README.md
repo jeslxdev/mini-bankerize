@@ -1,6 +1,9 @@
 # MiniBankerize
 
-Sistema de Propostas de Empréstimo com API RESTful, painel administrativo Filament e arquitetura Hexagonal (Ports and Adapters).
+> Sistema de Propostas de Empréstimo com API RESTful, painel administrativo Filament e arquitetura Hexagonal (Ports and Adapters).
+> Projeto desenvolvido seguindo princípios SOLID, PSR-12 e arquitetura Hexagonal.
+> Laravel Framework 12.15.0
+> PHP 8.3.21 (cli) (built: May  6 2025 15:56:17) (NTS Visual C++ 2019 x64)
 
 ## Como clonar o projeto
 
@@ -18,17 +21,17 @@ cd mini-bankerize/src
 
 2. **Instale as dependências PHP:**
    ```powershell
-   docker exec -it bankerize-app composer install
+   docker exec -it bankerize_app composer install
    ```
 
 3. **Rode as migrations:**
    ```powershell
-   docker exec -it bankerize-app php artisan migrate:fresh
+   docker exec -it bankerize_app php artisan migrate:fresh
    ```
 
 4. **Crie um usuário admin para o painel Filament:**
    ```powershell
-   docker exec -it bankerize-app php artisan user:create-admin admin@teste.com senha123 "João Admin"
+   docker exec -it bankerize_app php artisan user:create-admin admin@teste.com senha123 "João Admin"
    ```
 
 5. **Acesse o painel Filament:**
@@ -66,11 +69,13 @@ for ($i = 1; $i -le 10; $i++) {
   ```powershell
   php artisan migrate:fresh
   ```
+- Rodar os testes unit:
+```powershell
+php artisan test
+```
 - Criar usuário admin Filament:
   ```powershell
   php artisan user:create-admin admin@teste.com senha123 "João Admin"
   ```
 
 ---
-
-> Projeto desenvolvido seguindo princípios SOLID, PSR-12 e arquitetura Hexagonal.
