@@ -1,8 +1,11 @@
 # MiniBankerize
 
 > Sistema de Propostas de Empréstimo com API RESTful, painel administrativo Filament e arquitetura Hexagonal (Ports and Adapters).
+
 > Projeto desenvolvido seguindo princípios SOLID, PSR-12 e arquitetura Hexagonal.
+
 > Laravel Framework 12.15.0
+
 > PHP 8.3.21 (cli) (built: May  6 2025 15:56:17) (NTS Visual C++ 2019 x64)
 
 ## Como clonar o projeto
