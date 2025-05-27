@@ -1,0 +1,14 @@
+# Ignorar pastas e arquivos do Docker gerados automaticamente
+docker/mysql/*.*
+docker/mysql/
+
+# Ignorar todos os arquivos de socket
+*.sock
+
+# Ignorar logs, temp, etc
+*.log
+*.pid
+
+# Outros exemplos úteis
+node_modules/
+.env
